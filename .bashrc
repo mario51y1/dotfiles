@@ -11,7 +11,7 @@ alias ls='ls --color=auto'
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export EDITOR=vim
+export EDITOR=nvim
 
 # dont put diplicate lines in histori
 HISTCONTROL=ignoreboth
