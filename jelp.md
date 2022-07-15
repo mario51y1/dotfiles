@@ -4,5 +4,6 @@ List of programs:
 	
 - SCREEN CONFIG
 	- arandr	- setting things up
-	- autorandr	- save screen configurations with -s
-			- load configurations with 'profile'
+	- autorandr	
+		- save screen configurations with -s
+		- load configurations with 'profile'
