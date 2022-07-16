@@ -11,3 +11,6 @@ List of programs:
 - KEYBOARD LAYOUTS
 	- created using setxkbmap, managed by xkb-switch 
 	- alias 'layout' to 'xkb-switch', use with layout (es,us)
+
+- NEOVIM
+	- Plugins: add on nvim conf file, install using PlugInstall, update using PlugUpdate
