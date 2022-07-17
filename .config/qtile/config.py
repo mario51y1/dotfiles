@@ -99,8 +99,9 @@ for i in groups:
         ]
     )
 
+bar_border_color="7E9CD8"
 layouts = [
-    layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
+        layout.Columns(border_focus_stack=["#7E9CD8","#7E9CD8"], border_width=4, border_focus="#7E9CD8",margin=4),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
@@ -121,7 +122,6 @@ widget_defaults = dict(
     padding=3,
 )
 extension_defaults = widget_defaults.copy()
-
 screens = [
     Screen(
         top=bar.Bar(
@@ -144,9 +144,10 @@ screens = [
             ],
             24,
             border_width=[2, 2, 2, 2],  # Draw top and bottom borders
-            border_color=["ff00ff", "ff00ff", "ff00ff", "ff00ff"]  # Borders are magenta
+            border_color=bar_border_color,  # Borders are magenta
+            background='#1F1F28'
         ),
-        wallpaper='~/wallpapers/carina.jpg',
+        wallpaper='~/wallpapers/5117688.jpg',
         wallpaper_mode='fill'
     ),
     Screen(
