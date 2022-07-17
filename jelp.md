@@ -7,7 +7,7 @@ List of programs:
 	- autorandr	
 		- save screen configurations with -s
 		- load configurations with 'profile'
-
+	- xblacklight set X for brightness
 - KEYBOARD LAYOUTS
 	- created using setxkbmap, managed by xkb-switch 
 	- alias 'layout' to 'xkb-switch', use with layout (es,us)

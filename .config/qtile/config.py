@@ -73,7 +73,7 @@ keys = [
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 ]
 
-groups = [Group(i) for i in "123456789"]
+groups = [Group(i) for i in "1234567"]
 
 for i in groups:
     keys.extend(
@@ -116,7 +116,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="sans",
+    font="Fira Code",
     fontsize=12,
     padding=3,
 )
@@ -143,9 +143,11 @@ screens = [
                 widget.QuickExit(),
             ],
             24,
-            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-            # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
+            border_width=[2, 2, 2, 2],  # Draw top and bottom borders
+            border_color=["ff00ff", "ff00ff", "ff00ff", "ff00ff"]  # Borders are magenta
         ),
+        wallpaper='~/wallpapers/carina.jpg',
+        wallpaper_mode='fill'
     ),
     Screen(
         top=bar.Bar(

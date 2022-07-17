@@ -62,7 +62,7 @@ HISTCONTROL=ignoreboth
 # append to history file
 shopt -s histappend
 
-setxkbmap us,es
+#setxkbmap -layout 'us,es' -variant ','
 
 #custom alias
 alias ll='ls -al'
