@@ -14,3 +14,6 @@ List of programs:
 
 - NEOVIM
 	- Plugins: add on nvim conf file, install using PlugInstall, update using PlugUpdate
+
+- FILE MANAGER
+	- thunar

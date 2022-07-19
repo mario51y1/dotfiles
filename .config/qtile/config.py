@@ -99,9 +99,9 @@ for i in groups:
         ]
     )
 
-bar_border_color="7E9CD8"
+border_color="7E9CD8"
 layouts = [
-        layout.Columns(border_focus_stack=["#7E9CD8","#7E9CD8"], border_width=4, border_focus="#7E9CD8",margin=4),
+        layout.Columns(border_focus_stack=["#7E9CD8","#7E9CD8"], border_width=3, border_focus="#7E9CD8",margin=4),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
@@ -121,13 +121,12 @@ widget_defaults = dict(
     fontsize=12,
     padding=3,
 )
-extension_defaults = widget_defaults.copy()
-screens = [
-    Screen(
+def getDefaultScreen():
+    return Screen(
         top=bar.Bar(
             [
                 widget.CurrentLayout(),
-                widget.GroupBox(),
+                widget.GroupBox(rounded=True),
                 widget.Prompt(),
                 widget.WindowName(),
                 widget.Chord(
@@ -136,44 +135,32 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                 ),
-                widget.TextBox("default config", name="default"),
                 widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
                 widget.Systray(),
-                widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
+                widget.TextBox('|'),
+                widget.Volume(fmt='Vol: {}'),
+                widget.TextBox('|'),
+                widget.Battery(format='Bat: {percent:2.0%}'),
+                widget.TextBox('|'),
+                widget.Clock(format="%Y-%m-%d %A %I:%M"),
+                widget.TextBox('|'),
                 widget.QuickExit(),
             ],
             24,
-            border_width=[2, 2, 2, 2],  # Draw top and bottom borders
-            border_color=bar_border_color,  # Borders are magenta
+            margin=4,
+            border_width=3,  # Draw top and bottom borders
+            border_color=border_color,  # Borders are magenta
             background='#1F1F28'
         ),
         wallpaper='~/wallpapers/5117688.jpg',
         wallpaper_mode='fill'
-    ),
-    Screen(
-        top=bar.Bar(
-             [
-                widget.CurrentLayout(),
-                widget.GroupBox(),
-                widget.Prompt(),
-                widget.WindowName(),
-                widget.Chord(
-                    chords_colors={
-                        "launch": ("#ff0000", "#ffffff"),
-                    },
-                    name_transform=lambda name: name.upper(),
-                ),
-                widget.TextBox("default config", name="default"),
-                widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
-                widget.Systray(),
-                widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
-                widget.QuickExit(),
-            ],
-            24,
-            #   
-        )
     )
-]
+
+extension_defaults = widget_defaults.copy()
+screens = [
+    getDefaultScreen(),
+    getDefaultScreen()
+        ] 
 
 # Drag floating layouts.
 mouse = [
