@@ -16,4 +16,5 @@ List of programs:
 	- Plugins: add on nvim conf file, install using PlugInstall, update using PlugUpdate
 
 - FILE MANAGER
-	- thunar
+	- thunar: Visual for drag and drop
+	- ranger; terminal based file manager
