@@ -1,0 +1,2 @@
+nredshift-gtk &
+m-applet &
