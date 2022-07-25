@@ -154,7 +154,7 @@ def getDefaultScreen():
                 widget.TextBox('|'),
                 widget.Battery(format='Bat: {percent:2.0%}'),
                 widget.TextBox('|'),
-                widget.Clock(format="%Y-%m-%d %A %I:%M"),
+                widget.Clock(format="%Y-%m-%d %A %H:%M"),
                 widget.TextBox('|'),
                 widget.Systray(),
                 widget.QuickExit(),

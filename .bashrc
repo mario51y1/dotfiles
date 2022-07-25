@@ -72,3 +72,4 @@ alias dotconfig='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ..='cd ..'
 
 
+export PATH=$PATH:/home/mario51y1/.spicetify
