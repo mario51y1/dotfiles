@@ -64,8 +64,13 @@ shopt -s histappend
 
 #setxkbmap -layout 'us,es' -variant ','
 
+# To avoid mistakes
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
 #custom alias
-alias ll='ls -al'
+alias ll='ls -ahl'
 alias jelp='cat /home/mario51y1/jelp.md'
 alias layout='xkb-switch'
 alias dotconfig='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
