@@ -1,0 +1,6 @@
+{
+  "hover.target": "preview",
+  "signature.enable": false,
+  "suggest.maxCompleteItemCount": 16,
+  "coc.preferences.formatOnSaveFiletypes": ["css", "svelte", "vue", "javascript", "typescript"]
+}
