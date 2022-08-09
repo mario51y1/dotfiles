@@ -2,3 +2,8 @@
 redshift-gtk &
 nm-applet &
 blueman-applet &
+brave &
+thunderbird &
+telegram &
+discord &
+spotify &

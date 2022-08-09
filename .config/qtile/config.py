@@ -132,6 +132,12 @@ wmname = "LG3D"
 from libqtile import hook
 import os
 import subprocess
+from modules.groups import apps_to_group_dict
+@hook.subscribe.client_new
+def client_new(client):
+    for app_name,group in apps_to_group_dict.items():
+        if app_name == client.name:
+            client.togroup(group)
 
 @hook.subscribe.startup_once
 def autostart():

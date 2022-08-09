@@ -2,33 +2,38 @@ from modules.keys import keys, mod
 from libqtile.lazy import lazy
 from libqtile.config import Key, Group, Match
 workspaces = [
-        {
-        "name": "Ⅰ", 
+    {
+        "name": "one",
+        "label": "Ⅰ", 
         "key": "1", 
         "matches": [], 
         "lay": "bsp"
     },
     {   
-        "name": "Ⅱ", "key": "2", 
+        "name": "two",
+        "label": "Ⅱ", "key": "2", 
         "matches": [
             #Match(wm_class="emacs")
         ], 
         "lay": "bsp"
     },
     {   
-        "name": "Ⅲ", "key": "3", 
+        "name": "three",
+        "label": "Ⅲ", "key": "3", 
         "matches": [
             #Match(wm_class="emacs")
         ], 
         "lay": "bsp"
     },
     {
-        "name": "", "key": "4",
+        "name":"www",
+        "label": "", "key": "4",
         "matches": [Match(wm_class="brave")], 
         "lay": "bsp"
     },
     {
-        "name": "",
+        "name": "mail",
+        "label": "",
         "key": "5",
         "matches": [
             Match(wm_class="thunderbird"),
@@ -39,7 +44,8 @@ workspaces = [
     },
 
     {
-        "name": "",
+        "name":"chat",
+        "label": "",
         "key": "6",
         "matches": [
             Match(wm_class="slack"),
@@ -49,19 +55,22 @@ workspaces = [
         "lay": "bsp",
     },
     {
-        "name": "♬",
+            "name":"music",
+        "label": "♬",
         "key": "7",
         "matches": [Match(wm_class="spotify")],
         "lay": "bsp",
     },
     {
-        "name": "",
+            "name":"file",
+        "label": "",
         "key": "8",
         "matches": [Match(wm_class="thunar")],
         "lay": "bsp",
     },
     {
-        "name": "",
+        "name":"sys",
+        "label": "⚙",
         "key": "9",
         "matches": [
             Match(wm_class="lxappearance"),
@@ -70,6 +79,16 @@ workspaces = [
         "lay": "floating",
     },
 ]
+
+apps_to_group_dict = {
+    "Brave": "www",
+    "Thunderbird": "mail",
+    "Telegram": "chat",
+    "discord": "chat",
+    "Spotify": "music",
+    "ranger": "file",
+    "btm":"sys"
+}
 
 groups = [
     # ScratchPad(
@@ -90,7 +109,7 @@ groups = [
 
 for workspace in workspaces:
     matches = workspace["matches"] if "matches" in workspace else None
-    groups.append(Group(workspace["name"], matches=matches, layout=workspace["lay"]))
+    groups.append(Group(workspace["name"],label=workspace["label"], matches=matches, layout=workspace["lay"]))
     keys.append(
         Key(
             [mod],
