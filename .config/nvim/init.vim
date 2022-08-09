@@ -7,6 +7,8 @@ Plug 'kyazdani42/nvim-tree.lua'                                     " File iew l
 Plug 'nvim-lualine/lualine.nvim'                                    " Status line
 Plug 'windwp/nvim-autopairs'                                        " Auto write pairs
 
+Plug 'folke/todo-comments.nvim'                                     " TODO highlighting
+
 Plug 'nvim-lua/plenary.nvim'                                        " Auxiliar LUA functions, for telescope
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }            " File finding 
 
@@ -106,5 +108,3 @@ lua require('plugins')
 colorscheme kanagawa
 " This line has to be after colorscheme or it will be replaced
 lua vim.cmd[[highlight IndentBlanklineContextChar guifg=#A3D4D6 gui=nocombine]]
-
-
