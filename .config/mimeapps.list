@@ -2,9 +2,13 @@
 x-scheme-handler/mailto=userapp-Thunderbird-B1OFP1.desktop
 message/rfc822=userapp-Thunderbird-B1OFP1.desktop
 x-scheme-handler/mid=userapp-Thunderbird-B1OFP1.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-GQEJQ1.desktop
 
 [Added Associations]
 x-scheme-handler/mailto=userapp-Thunderbird-B1OFP1.desktop;
 x-scheme-handler/mid=userapp-Thunderbird-B1OFP1.desktop;
 application/x-compressed-tar=thunar.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-GQEJQ1.desktop;
+text/plain=nvim.desktop;
+image/jpeg=sxiv.desktop;
