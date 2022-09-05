@@ -8,6 +8,7 @@ Plug 'nvim-lualine/lualine.nvim'                                    " Status lin
 Plug 'windwp/nvim-autopairs'                                        " Auto write pairs
 
 Plug 'folke/todo-comments.nvim'                                     " TODO highlighting
+Plug 'tpope/vim-fugitive'                                           " GIT integration and stuff
 
 Plug 'nvim-lua/plenary.nvim'                                        " Auxiliar LUA functions, for telescope
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }            " File finding 
@@ -19,6 +20,7 @@ Plug 'numToStr/Comment.nvim'                                        " Toggle com
 
 Plug 'ryanoasis/vim-devicons'                                       " File icons
 Plug 'kyazdani42/nvim-web-devicons'                                 " optional, for file icons
+Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 call plug#end()
 
 set encoding=UTF-8
@@ -46,6 +48,12 @@ set softtabstop=4
 set expandtab
 set autoindent
 set shiftwidth=4
+"
+" Move 1 more lines up or down in normal and visual selection modes.
+nnoremap K :m .-2<CR>==
+nnoremap J :m .+1<CR>==
+vnoremap K :m '<-2<CR>gv=gv
+vnoremap J :m '>+1<CR>gv=gv
 
 set number                  " add line numbers
 set wildmode=longest,list   " get bash-like tab completions
