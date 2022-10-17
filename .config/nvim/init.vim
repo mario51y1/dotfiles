@@ -10,6 +10,8 @@ Plug 'windwp/nvim-autopairs'                                        " Auto write
 Plug 'folke/todo-comments.nvim'                                     " TODO highlighting
 Plug 'tpope/vim-fugitive'                                           " GIT integration and stuff
 
+Plug 'dstein64/vim-startuptime'
+
 Plug 'nvim-lua/plenary.nvim'                                        " Auxiliar LUA functions, for telescope
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }            " File finding 
 

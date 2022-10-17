@@ -26,15 +26,24 @@ workspaces = [
         "lay": "bsp"
     },
     {
+        "name": "four",
+        "label": "Ⅳ", "key": "4", 
+        "matches": [
+            #Match(wm_class="emacs")
+        ], 
+        "lay": "bsp"
+
+    },
+    {
         "name":"www",
-        "label": "", "key": "4",
+        "label": "", "key": "5",
         "matches": [Match(wm_class="brave")], 
         "lay": "bsp"
     },
     {
         "name": "mail",
         "label": "",
-        "key": "5",
+        "key": "6",
         "matches": [
             Match(wm_class="thunderbird"),
             # Match(wm_class="ptask"),
@@ -46,7 +55,7 @@ workspaces = [
     {
         "name":"chat",
         "label": "",
-        "key": "6",
+        "key": "7",
         "matches": [
             Match(wm_class="slack"),
             Match(wm_class="discord"),
@@ -55,23 +64,23 @@ workspaces = [
         "lay": "bsp",
     },
     {
-            "name":"music",
+        "name":"music",
         "label": "♬",
-        "key": "7",
+        "key": "8",
         "matches": [Match(wm_class="spotify")],
         "lay": "bsp",
     },
     {
             "name":"file",
         "label": "",
-        "key": "8",
+        "key": "9",
         "matches": [Match(wm_class="thunar")],
         "lay": "bsp",
     },
     {
         "name":"sys",
         "label": "⚙",
-        "key": "9",
+        "key": "0",
         "matches": [
             Match(wm_class="lxappearance"),
             Match(wm_class="pavucontrol"),

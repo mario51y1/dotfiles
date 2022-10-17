@@ -29,6 +29,9 @@ keys = [
     Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
     Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
 
+    Key([mod], "comma", lazy.to_screen(0), desc='Keyboard focus to monitor 1'),
+    Key([mod], "period", lazy.to_screen(1), desc='Keyboard focus to monitor 2'),
+    
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
