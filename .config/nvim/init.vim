@@ -30,7 +30,7 @@ set termguicolors
 set showmatch               " show matching 
 
 set ignorecase              " case insensitive 
-set mouse=v                 " middle-click paste with 
+set mouse=a                 " middle-click paste with 
 
 set hlsearch                " highlight search 
 set incsearch               " incremental search
