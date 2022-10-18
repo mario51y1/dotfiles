@@ -1,7 +1,10 @@
 List of programs:	
 - MUSIC	
 	- pulsemixer	- mix music, channels and more
-	
+
+- PDF
+    - evince        - pdf viewer
+
 - SCREEN CONFIG
 	- arandr	- setting things up
 	- autorandr	
