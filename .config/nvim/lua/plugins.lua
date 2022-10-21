@@ -1,4 +1,31 @@
-require("nvim-tree").setup()
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+
+require("nvim-tree").setup({
+  sort_by = "case_sensitive",
+  view = {
+    width = 36,
+    mappings = {
+      list = {
+        { key = "u", action = "dir_up" },
+      },
+    },
+  },
+  renderer = {
+    group_empty = true,
+    indent_markers = {
+      enable = true
+    }
+  },
+  filters = {
+    dotfiles = true,
+  },
+  git = {
+    ignore = false
+  }
+})
+
 require 'colorizer'.setup()
 require("lualine").setup()
 require'nvim-web-devicons'.setup {
@@ -24,6 +51,7 @@ require('kanagawa').setup({
 })
 require("nvim-autopairs").setup {}
 
+
 require'nvim-treesitter.configs'.setup {
   ensure_installed = {"python","sql","hcl","dockerfile","bash","json","markdown","yaml","c","cpp"},
 
@@ -39,6 +67,7 @@ require'nvim-treesitter.configs'.setup {
 }
 require('Comment').setup()
 -- Line indent plugin
+
 
 vim.opt.list = true
 vim.opt.listchars:append "space:⋅"

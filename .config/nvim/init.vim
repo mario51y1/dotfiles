@@ -1,5 +1,6 @@
 "plugin stuff
 call plug#begin()
+
 Plug 'rebelot/kanagawa.nvim'                                        " Color scheme
 Plug 'norcalli/nvim-colorizer.lua'                                  " see colors when defining them on files, for example #aabbff
 Plug 'lukas-reineke/indent-blankline.nvim'                          " Show indent lines
@@ -61,7 +62,7 @@ set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
-
+let g:coc_global_extensions = ['coc-json', 'coc-git']
 let g:pymode_options_max_line_length = 94 
 set noswapfile              " disable creating swap file
 
@@ -75,6 +76,7 @@ set foldlevelstart=99
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 
+lua require('plugins')
 " ---------------------------------------------------
 " COC CONF START
 " Some servers have issues with backup files, see #649.
@@ -96,11 +98,10 @@ set signcolumn=yes
 "   \ <SID>check_back_space() ? "\<TAB>" :
 "   \ coc#refresh()
 
-function! s:check_back_space() abort
+function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-
 
 inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#pum#next(1) :
@@ -112,6 +113,7 @@ inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 " <C-g>u breaks current undo, please make your own choice.
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -123,7 +125,6 @@ let g:coc_snippet_next = '<tab>'
 " COC CONF END 
 " ---------------------------------------------------
 
-lua require('plugins')
 
 "" Customize color
 autocmd ColorScheme * hi CocMenuSel ctermbg=237 guibg=#13354A
