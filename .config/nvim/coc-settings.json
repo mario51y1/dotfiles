@@ -2,5 +2,6 @@
   "hover.target": "preview",
   "signature.enable": false,
   "suggest.maxCompleteItemCount": 16,
+  "diagnostic.checkCurrentLine": true,
   "coc.preferences.formatOnSaveFiletypes": ["css", "svelte", "vue", "javascript", "typescript"]
 }

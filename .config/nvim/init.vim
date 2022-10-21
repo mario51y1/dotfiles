@@ -1,5 +1,6 @@
 "plugin stuff
 call plug#begin()
+
 Plug 'rebelot/kanagawa.nvim'                                        " Color scheme
 Plug 'norcalli/nvim-colorizer.lua'                                  " see colors when defining them on files, for example #aabbff
 Plug 'lukas-reineke/indent-blankline.nvim'                          " Show indent lines
@@ -75,6 +76,7 @@ set foldlevelstart=99
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 
+lua require('plugins')
 " ---------------------------------------------------
 " COC CONF START
 " Some servers have issues with backup files, see #649.
@@ -111,6 +113,7 @@ inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 " <C-g>u breaks current undo, please make your own choice.
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -122,7 +125,6 @@ let g:coc_snippet_next = '<tab>'
 " COC CONF END 
 " ---------------------------------------------------
 
-lua require('plugins')
 
 "" Customize color
 autocmd ColorScheme * hi CocMenuSel ctermbg=237 guibg=#13354A
