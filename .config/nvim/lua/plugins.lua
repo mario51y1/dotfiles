@@ -40,6 +40,7 @@ require'nvim-treesitter.configs'.setup {
 require('Comment').setup()
 -- Line indent plugin
 
+
 vim.opt.list = true
 vim.opt.listchars:append "space:⋅"
 vim.opt.listchars:append "eol:↴"

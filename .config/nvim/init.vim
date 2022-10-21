@@ -61,7 +61,7 @@ set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
-
+let g:coc_global_extensions = ['coc-json', 'coc-git']
 let g:pymode_options_max_line_length = 94 
 set noswapfile              " disable creating swap file
 
