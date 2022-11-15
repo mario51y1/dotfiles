@@ -11,6 +11,9 @@ Plug 'folke/todo-comments.nvim'                                     " TODO highl
 Plug 'tpope/vim-fugitive'                                           " GIT integration and stuff
 Plug 'dstein64/vim-startuptime'
 
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'                                       " Markdown Syntax
+
 Plug 'nvim-lua/plenary.nvim'                                        " Auxiliar LUA functions, for telescope
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }            " File finding 
 
@@ -62,7 +65,9 @@ set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
-let g:coc_global_extensions = ['coc-json', 'coc-git']
+
+let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-yaml', 'coc-pyright', 'coc-snippets','coc-docker','coc-sql','coc-clangd','coc-sh']
+
 let g:pymode_options_max_line_length = 94 
 set noswapfile              " disable creating swap file
 
