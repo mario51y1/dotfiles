@@ -24,7 +24,12 @@ Plug 'numToStr/Comment.nvim'                                        " Toggle com
 Plug 'ryanoasis/vim-devicons'                                       " File icons
 Plug 'kyazdani42/nvim-web-devicons'                                 " optional, for file icons
 Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
+
+
+Plug 'vimwiki/vimwiki'                                              " Vim Wiki
+
 call plug#end()
+set nocompatible
 set encoding=UTF-8
 set termguicolors
 set showmatch               " show matching 
@@ -65,6 +70,7 @@ set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
+
 
 let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-yaml', 'coc-pyright', 'coc-snippets','coc-docker','coc-sql','coc-clangd','coc-sh']
 
