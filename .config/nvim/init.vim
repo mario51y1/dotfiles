@@ -11,6 +11,8 @@ Plug 'folke/todo-comments.nvim'                                     " TODO highl
 Plug 'tpope/vim-fugitive'                                           " GIT integration and stuff
 Plug 'dstein64/vim-startuptime'
 
+Plug 'taketwo/vim-ros'                                              " ROS package
+
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'                                       " Markdown Syntax
 
