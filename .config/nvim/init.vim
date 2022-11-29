@@ -52,6 +52,9 @@ au BufNewFile,BufRead *.py
     \ set foldmethod=indent
 let g:python3_host_prog = '/usr/bin/python3'
 
+au BufReadPost *.launch set syntax=xml                      " ros launch files
+
+
 set tabstop=4
 set softtabstop=4
 set expandtab
