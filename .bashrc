@@ -78,3 +78,6 @@ alias ..='cd ..'
 
 
 export PATH=$PATH:/home/mario51y1/.spicetify
+
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
