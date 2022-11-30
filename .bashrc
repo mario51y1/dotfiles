@@ -24,6 +24,9 @@ PS4="+ "
 export PS1="\[$(tput bold)\]\[\033[38;5;4m\]\u@\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;2m\]\w\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;1m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
 
 alias ls="ls --color=auto"
+#alias ls="exa -l --git --icons"
+alias exa="exa --git --icons"
+alias exal="exa -l"
 alias dir="dir --color=auto"
 alias grep="grep --color=auto"
 alias dmesg='dmesg --color'
@@ -78,3 +81,12 @@ alias ..='cd ..'
 
 
 export PATH=$PATH:/home/mario51y1/.spicetify
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/mario51y1/google-cloud-sdk/path.bash.inc' ]; then . '/home/mario51y1/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/mario51y1/google-cloud-sdk/completion.bash.inc' ]; then . '/home/mario51y1/google-cloud-sdk/completion.bash.inc'; fi
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
