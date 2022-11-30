@@ -9,7 +9,8 @@ shopt -s checkwinsize
 
 # Enable history appending instead of overwriting.
 shopt -s histappend
-
+HISTSIZE=100000
+HISTFILESIZE=100000
 
 [[ -f ~/.dir_colors ]] && match_lhs="${match_lhs}$(<~/.dir_colors)"
 [[ -f /etc/DIR_COLORS ]] && match_lhs="${match_lhs}$(</etc/DIR_COLORS)"
@@ -90,3 +91,5 @@ if [ -f '/home/mario51y1/google-cloud-sdk/completion.bash.inc' ]; then . '/home/
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

@@ -11,6 +11,8 @@ Plug 'folke/todo-comments.nvim'                                     " TODO highl
 Plug 'tpope/vim-fugitive'                                           " GIT integration and stuff
 Plug 'dstein64/vim-startuptime'
 
+Plug 'taketwo/vim-ros'                                              " ROS package
+
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'                                       " Markdown Syntax
 
@@ -50,6 +52,9 @@ au BufNewFile,BufRead *.py
     \ set foldmethod=indent
 let g:python3_host_prog = '/usr/bin/python3'
 
+au BufReadPost *.launch set syntax=xml                      " ros launch files
+
+
 set tabstop=4
 set softtabstop=4
 set expandtab
@@ -72,7 +77,7 @@ set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
 
 
-let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-yaml', 'coc-pyright', 'coc-snippets','coc-docker','coc-sql','coc-clangd','coc-sh']
+let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-yaml', 'coc-pyright', 'coc-snippets','coc-docker','coc-sql','coc-clangd','coc-sh', 'coc-xml']
 
 let g:pymode_options_max_line_length = 94 
 set noswapfile              " disable creating swap file
