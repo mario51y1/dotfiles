@@ -55,11 +55,11 @@ let g:python3_host_prog = '/usr/bin/python3'
 au BufReadPost *.launch set syntax=xml                      " ros launch files
 
 
-set tabstop=4
-set softtabstop=4
+set tabstop=2
+set softtabstop=2
 set expandtab
 set autoindent
-set shiftwidth=4
+set shiftwidth=2
 " Move 1 more lines up or down in normal and visual selection modes.
 nnoremap K :m .-2<CR>==
 nnoremap J :m .+1<CR>==
