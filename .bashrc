@@ -71,9 +71,9 @@ shopt -s histappend
 #setxkbmap -layout 'us,es' -variant ','
 
 # To avoid mistakes
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
+#alias rm='rm -i'
+#alias cp='cp -i'
+#alias mv='mv -i'
 
 #custom alias
 alias ll='ls -ahl'
