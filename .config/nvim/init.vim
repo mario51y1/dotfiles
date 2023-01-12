@@ -53,7 +53,7 @@ au BufNewFile,BufRead *.py
 let g:python3_host_prog = '/usr/bin/python3'
 
 au BufReadPost *.launch set syntax=xml                      " ros launch files
-
+au BufReadPost *.razortemplate set syntax=yaml
 
 set tabstop=2
 set softtabstop=2
