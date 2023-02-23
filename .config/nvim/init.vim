@@ -16,8 +16,10 @@ Plug 'taketwo/vim-ros'                                              " ROS packag
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'                                       " Markdown Syntax
 
+Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'                                        " Auxiliar LUA functions, for telescope
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }            " File finding 
+
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}         " Syntax highlighting using treesitter
 Plug 'neoclide/coc.nvim', {'branch': 'release'}                     " Code completion 
