@@ -10,8 +10,8 @@ Plug 'windwp/nvim-autopairs'                                        " Auto write
 Plug 'folke/todo-comments.nvim'                                     " TODO highlighting
 Plug 'tpope/vim-fugitive'                                           " GIT integration and stuff
 Plug 'dstein64/vim-startuptime'
-
-Plug 'taketwo/vim-ros'                                              " ROS package
+Plug 'folke/trouble.nvim'                                           " Errors and warnigns list
+" Plug 'taketwo/vim-ros'                                              " ROS package
 
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'                                       " Markdown Syntax
@@ -141,6 +141,9 @@ let g:coc_snippet_next = '<tab>'
 " COC CONF END 
 " ---------------------------------------------------
 
+nnoremap <leader>xx <cmd>TroubleToggle<cr>
+
+au filetype vimwiki silent! iunmap <buffer> <Tab>
 
 "" Customize color
 autocmd ColorScheme * hi CocMenuSel ctermbg=237 guibg=#13354A

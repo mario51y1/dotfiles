@@ -47,7 +47,6 @@ require('kanagawa').setup({
     globalStatus = false,       -- adjust window separators highlight for laststatus=3
     terminalColors = true,      -- define vim.g.terminal_color_{0,17}
     colors = {},
-    overrides = {},
 })
 require("nvim-autopairs").setup {}
 
@@ -67,7 +66,6 @@ require'nvim-treesitter.configs'.setup {
 }
 require('Comment').setup()
 -- Line indent plugin
-
 
 vim.opt.list = true
 vim.opt.listchars:append "space:⋅"
@@ -141,7 +139,7 @@ require("todo-comments").setup {
   },
 }
 
-
+require("trouble").setup()
 
 
 
