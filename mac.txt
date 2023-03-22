@@ -1,0 +1,9 @@
+# Install brew
+
+# Install stuff  with brew
+brew install --cask spotify google-chrome visual-studio-code
+brew install neovim fzf
+
+# download dotfiles
+# add git ssh
+git clone
