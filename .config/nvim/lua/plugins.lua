@@ -1,7 +1,36 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+local api = require("nvim-tree.api")
+api.events.subscribe(api.events.Event.FileCreated, function(file)
+  vim.cmd("edit " .. file.fname)
+end)
+local function open_nvim_tree(data)
+-- buffer is a directory
+  local directory = vim.fn.isdirectory(data.file) == 1
+-- buffer is a real file on the disk
+  local real_file = vim.fn.filereadable(data.file) == 1
+  -- buffer is a [No Name]
+  local no_name = data.file == "" and vim.bo[data.buf].buftype == ""
 
+  -- open the tree, find the file but don't focus it
+  if directory then
+  -- change to the directory
+    vim.cmd.cd(data.file)
+
+    -- open the tree
+    require("nvim-tree.api").tree.open()
+    return
+  end
+
+  if real_file or no_name then
+    require("nvim-tree.api").tree.toggle({ focus = false, find_file = true, })
+    return
+  end
+  return
+end
+
+vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
   view = {
@@ -23,7 +52,8 @@ require("nvim-tree").setup({
   },
   git = {
     ignore = false
-  }
+  },
+  filters = {custom = {"^.git$"}}
 })
 
 require 'colorizer'.setup()
@@ -66,6 +96,7 @@ require'nvim-treesitter.configs'.setup {
 }
 require('Comment').setup()
 -- Line indent plugin
+
 
 vim.opt.list = true
 vim.opt.listchars:append "space:⋅"

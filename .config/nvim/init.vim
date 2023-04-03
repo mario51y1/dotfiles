@@ -42,7 +42,8 @@ set mouse=a                 " middle-click paste with
 set hlsearch                " highlight search 
 set incsearch               " incremental search
 set hidden
-vnoremap <C-c> "*y
+vnoremap <C-c> "*y          " ctrl-c saves to cliboard in visual mode 
+
 au BufNewFile,BufRead *.py
     \ set tabstop=4               " number of columns occupied by a tab 
     \ set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
@@ -92,6 +93,9 @@ set foldlevelstart=99
 " Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+
+" Nvimtree commands shortucts
+nnoremap <leader>tt <cmd>NvimTreeToggle<cr>
 
 lua require('plugins')
 " ---------------------------------------------------
