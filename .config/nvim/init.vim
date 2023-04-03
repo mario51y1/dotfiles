@@ -42,6 +42,7 @@ set mouse=a                 " middle-click paste with
 set hlsearch                " highlight search 
 set incsearch               " incremental search
 set hidden
+vnoremap <C-c> "*y
 au BufNewFile,BufRead *.py
     \ set tabstop=4               " number of columns occupied by a tab 
     \ set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
