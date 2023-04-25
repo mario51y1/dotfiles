@@ -8,5 +8,8 @@
       "default": true,
       "line-length": false
   },
-  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd"
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd",
+  "python.formatting.provider": "black",
+  "python.linting.flake8Enabled": true,
+  "pyright.organizeimports.provider":"isort"
 }

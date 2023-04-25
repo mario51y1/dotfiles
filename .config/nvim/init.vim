@@ -10,8 +10,8 @@ Plug 'windwp/nvim-autopairs'                                        " Auto write
 Plug 'folke/todo-comments.nvim'                                     " TODO highlighting
 Plug 'tpope/vim-fugitive'                                           " GIT integration and stuff
 Plug 'dstein64/vim-startuptime'
-
-Plug 'taketwo/vim-ros'                                              " ROS package
+Plug 'folke/trouble.nvim'                                           " Errors and warnigns list
+" Plug 'taketwo/vim-ros'                                              " ROS package
 
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'                                       " Markdown Syntax
@@ -44,6 +44,8 @@ set mouse=a                 " middle-click paste with
 set hlsearch                " highlight search 
 set incsearch               " incremental search
 set hidden
+vnoremap <C-c> "*y          " ctrl-c saves to cliboard in visual mode 
+
 au BufNewFile,BufRead *.py
     \ set tabstop=4               " number of columns occupied by a tab 
     \ set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
@@ -94,6 +96,9 @@ set foldlevelstart=99
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 
+" Nvimtree commands shortucts
+nnoremap <leader>tt <cmd>NvimTreeToggle<cr>
+
 lua require('plugins')
 " ---------------------------------------------------
 " COC CONF START
@@ -143,6 +148,9 @@ let g:coc_snippet_next = '<tab>'
 " COC CONF END 
 " ---------------------------------------------------
 
+nnoremap <leader>xx <cmd>TroubleToggle<cr>
+
+au filetype vimwiki silent! iunmap <buffer> <Tab>
 
 "" Customize color
 autocmd ColorScheme * hi CocMenuSel ctermbg=237 guibg=#13354A
