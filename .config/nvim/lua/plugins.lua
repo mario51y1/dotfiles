@@ -18,7 +18,6 @@ local function open_nvim_tree(data)
   -- change to the directory
     vim.cmd.cd(data.file)
 
-    -- open the tree
     require("nvim-tree.api").tree.open()
     return
   end
@@ -77,6 +76,7 @@ require('kanagawa').setup({
     globalStatus = false,       -- adjust window separators highlight for laststatus=3
     terminalColors = true,      -- define vim.g.terminal_color_{0,17}
     colors = {},
+    overrides = {},
 })
 require("nvim-autopairs").setup {}
 
