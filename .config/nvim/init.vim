@@ -143,13 +143,13 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 let g:coc_snippet_next = '<tab>'
 
-
+nmap <leader>qf  <Plug>(coc-fix-current)
 
 " COC CONF END 
 " ---------------------------------------------------
 
-nnoremap <leader>xx <cmd>TroubleToggle<cr>
-
+" nnoremap <leader>xx <cmd>TroubleToggle<cr>
+nmap <silent> <leader>xx <cmd>call coc#rpc#request('fillDiagnostics', [bufnr('%')])<CR><cmd>Trouble loclist<CR>`
 au filetype vimwiki silent! iunmap <buffer> <Tab>
 
 "" Customize color
