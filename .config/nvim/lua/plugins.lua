@@ -18,6 +18,7 @@ local function open_nvim_tree(data)
   -- change to the directory
     vim.cmd.cd(data.file)
 
+    -- open the tree
     require("nvim-tree.api").tree.open()
     return
   end
