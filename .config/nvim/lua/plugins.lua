@@ -77,8 +77,15 @@ require('kanagawa').setup({
     globalStatus = false,       -- adjust window separators highlight for laststatus=3
     terminalColors = true,      -- define vim.g.terminal_color_{0,17}
     colors = {},
-    overrides = {},
-})
+    overrides = function(colors) -- add/modify highlights
+        return {}
+    end,
+    theme = "wave",              -- Load "wave" theme when 'background' option is not set
+    background = {               -- map the value of 'background' option to a theme
+        dark = "wave",           -- try "dragon" !
+        light = "dragon"
+    }
+  })
 require("nvim-autopairs").setup {}
 
 
