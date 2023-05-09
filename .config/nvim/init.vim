@@ -29,7 +29,7 @@ Plug 'ryanoasis/vim-devicons'                                       " File icons
 Plug 'kyazdani42/nvim-web-devicons'                                 " optional, for file icons
 Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 
-
+Plug 'mechatroner/rainbow_csv'
 Plug 'vimwiki/vimwiki'                                              " Vim Wiki
 
 call plug#end()
