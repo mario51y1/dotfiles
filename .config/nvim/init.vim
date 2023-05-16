@@ -31,6 +31,8 @@ Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 
 Plug 'mechatroner/rainbow_csv'
 Plug 'vimwiki/vimwiki'                                              " Vim Wiki
+Plug 'lervag/vimtex'
+
 
 call plug#end()
 set nocompatible
