@@ -29,7 +29,6 @@ export PS1="\[$(tput bold)\]\[\033[38;5;4m\]\u@\h\[$(tput sgr0)\] \[$(tput sgr0)
 alias ls="ls --color=auto"
 alias exa="exa --git --icons"
 #change ls to exa
-#alias ls="exa -l --git --icons"
 alias exal="exa -l"
 alias dir="dir --color=auto"
 alias grep="grep --color=auto"
@@ -37,6 +36,7 @@ alias dmesg='dmesg --color'
 alias pacman="pacman --color=auto"
 #change cat to bat
 alias cat="bat"
+
 # Try to keep environment pollution down, EPA loves us.
 unset safe_term match_lhs
 
@@ -98,5 +98,10 @@ eval "$(pyenv init -)"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+#alias for ssh correctly in kitten
+alias sshk="kitty +kitten ssh" 
+alias cdtfm="cd ~/Documents/TFM/tfm_ws"
+source ~/Documents/TFM/tfm_ws/devel/setup.bash
 
 eval "$(starship init bash)"
+
