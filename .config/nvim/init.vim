@@ -32,7 +32,7 @@ Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 Plug 'mechatroner/rainbow_csv'
 Plug 'vimwiki/vimwiki'                                              " Vim Wiki
 Plug 'lervag/vimtex'
-
+Plug 'github/copilot.vim'
 
 call plug#end()
 set nocompatible
@@ -60,6 +60,8 @@ let g:python3_host_prog = '/usr/bin/python3'
 
 au BufReadPost *.launch set syntax=xml                      " ros launch files
 au BufReadPost *.razortemplate set syntax=yaml
+
+au BufReadPost *.tf set filetype=hcl
 
 set tabstop=2
 set softtabstop=2
