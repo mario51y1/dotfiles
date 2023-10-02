@@ -34,6 +34,7 @@ Plug 'vimwiki/vimwiki'                                              " Vim Wiki
 Plug 'lervag/vimtex'
 Plug 'github/copilot.vim'
 
+Plug 'olacin/telescope-gitmoji.nvim'
 call plug#end()
 set nocompatible
 set encoding=UTF-8
@@ -152,6 +153,8 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 
 " COC CONF END 
 " ---------------------------------------------------
+
+:command Gitmoji lua require('telescope').extensions.gitmoji.gitmoji()
 
 " nnoremap <leader>xx <cmd>TroubleToggle<cr>
 nmap <silent> <leader>xx <cmd>call coc#rpc#request('fillDiagnostics', [bufnr('%')])<CR><cmd>Trouble loclist<CR>`
