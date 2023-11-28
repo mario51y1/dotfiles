@@ -18,7 +18,7 @@ Plug 'preservim/vim-markdown'                                       " Markdown S
 
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'                                        " Auxiliar LUA functions, for telescope
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }            " File finding 
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }            " File finding 
 
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}         " Syntax highlighting using treesitter
@@ -63,6 +63,8 @@ au BufReadPost *.launch set syntax=xml                      " ros launch files
 au BufReadPost *.razortemplate set syntax=yaml
 
 au BufReadPost *.tf set filetype=hcl
+autocmd BufEnter *.html :set ft=html
+" au BufReadPost *.html set filetype=htmldjango.html
 
 set tabstop=2
 set softtabstop=2

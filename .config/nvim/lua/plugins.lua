@@ -189,6 +189,9 @@ vim.opt.listchars:append "space:⋅"
 vim.opt.listchars:append "eol:↴"
 
 require("ibl").setup {
+  scope = {
+    show_end = false,
+  }
 }
 
 require("todo-comments").setup {
@@ -274,13 +277,18 @@ require('telescope').setup{
                     if not msg then
                         return
                     end
-                    -- Insert text instead of emoji in message
-                    local emoji_text = entry.value.text
-                    vim.cmd(':G commit -m "' .. emoji_text .. ' ' .. msg .. '"')
+
+                    local git_tool = ":!git"
+                    if vim.g.loaded_fugitive then
+                        git_tool = ":G"
+                    end
+
+                    vim.cmd(string.format('%s commit -m "%s %s"', git_tool, emoji, msg))
                 end)
             end,
         },
     },
 }
 
+require('telescope').load_extension("gitmoji")
 
