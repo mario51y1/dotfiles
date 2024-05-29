@@ -35,6 +35,10 @@ Plug 'lervag/vimtex'
 Plug 'github/copilot.vim'
 
 Plug 'olacin/telescope-gitmoji.nvim'
+
+" MD preview, needs node.js
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+
 call plug#end()
 set nocompatible
 set encoding=UTF-8
