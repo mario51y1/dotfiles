@@ -1,4 +1,5 @@
 List of programs:	
+- NEEDS NODE.JS
 - MUSIC	
 	- pulsemixer	- mix music, channels and more
 
