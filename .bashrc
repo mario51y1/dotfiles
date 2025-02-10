@@ -26,10 +26,10 @@ parse_git_branch() {
 }
 export PS1="\[$(tput bold)\]\[\033[38;5;4m\]\u@\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;2m\]\w\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;1m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
 
-alias ls="ls --color=auto"
-alias exa="exa --git --icons"
+alias ls="exa"
+alias eza="eza --git --icons"
 #change ls to exa
-alias exal="exa -l"
+alias exal="eza -l"
 alias dir="dir --color=auto"
 alias grep="grep --color=auto"
 alias dmesg='dmesg --color'

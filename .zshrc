@@ -1,6 +1,6 @@
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-alias ls="exa --git --icons"
+alias ls="eza --git --icons"
 alias ll="ls -la"
 alias cat="bat"
 

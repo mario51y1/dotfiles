@@ -1,3 +1,3 @@
 # dotfiles
 stuff to install
-- bat fzf exa nvim docker starship bottom nodejs
+- bat fzf eza nvim docker starship bottom nodejs
