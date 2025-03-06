@@ -34,3 +34,11 @@ fpath+=~/.zfunc
 
 path+=('/Users/mario.perez/.local/bin')
 export TERM=xterm-256color
+
+export HISTFILE="$HOME/.zsh_history"
+export HISTSIZE=1000000000
+export SAVEHIST=1000000000
+setopt EXTENDED_HISTORY
+setopt SHARE_HISTORY
+
+export NODE_TLS_REJECT_UNAUTHORIZED=0

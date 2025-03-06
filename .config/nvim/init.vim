@@ -18,32 +18,63 @@ Plug 'preservim/vim-markdown'                                       " Markdown S
 
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'                                        " Auxiliar LUA functions, for telescope
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }            " File finding 
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }            " File finding 
 
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}         " Syntax highlighting using treesitter
-Plug 'neoclide/coc.nvim', {'branch': 'release'}                     " Code completion 
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}                     " Code completion 
 Plug 'numToStr/Comment.nvim'                                        " Toggle coments using keybindings
 
-Plug 'ryanoasis/vim-devicons'                                       " File icons
-Plug 'kyazdani42/nvim-web-devicons'                                 " optional, for file icons
-Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
+Plug 'nvim-tree/nvim-web-devicons'                                 " optional, for file icons
 
 Plug 'mechatroner/rainbow_csv'
-Plug 'vimwiki/vimwiki'                                              " Vim Wiki
+" Plug 'vimwiki/vimwiki'                                              " Vim Wiki
 Plug 'lervag/vimtex'
-Plug 'github/copilot.vim'
+
+Plug 'neovim/nvim-lspconfig'                                        " Default/basic LSP configs
+
+" Completion stuff
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+
+" Snippets with nvim-cmp
+Plug 'L3MON4D3/LuaSnip'
+Plug 'saadparwaiz1/cmp_luasnip'
+
+
+" Plug 'github/copilot.vim'
+Plug 'zbirenbaum/copilot.lua'
+Plug 'zbirenbaum/copilot-cmp'
+
+Plug 'olimorris/codecompanion.nvim'                                   " IA Companion
+
+Plug 'lewis6991/gitsigns.nvim'                                       " Git signs
 
 Plug 'olacin/telescope-gitmoji.nvim'
 
 " MD preview, needs node.js
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+Plug 'MeanderingProgrammer/render-markdown.nvim'
+
 
 call plug#end()
+
+
+" Avoid SSL CERT error
+let g:copilot_proxy_strict_ssl = v:false
+
+" By default, disable line wrapping for Markdown Preview
+set nowrap
+
 set nocompatible
 set encoding=UTF-8
 set termguicolors
 set showmatch               " show matching 
+
+set rtp+=/opt/homebrew/opt/fzf
 
 set ignorecase              " case insensitive 
 set mouse=a                 " middle-click paste with 
@@ -92,7 +123,7 @@ set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
 
 
-let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-yaml', 'coc-pyright', 'coc-snippets','coc-docker','coc-sql','coc-clangd','coc-sh', 'coc-xml']
+" let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-yaml', 'coc-pyright', 'coc-snippets','coc-docker','coc-sql','coc-clangd','coc-sh', 'coc-xml', 'coc-powershell']
 
 let g:pymode_options_max_line_length = 94 
 set noswapfile              " disable creating swap file
@@ -133,37 +164,38 @@ set signcolumn=yes
 "   \ <SID>check_back_space() ? "\<TAB>" :
 "   \ coc#refresh()
 
-function! CheckBackspace() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
+" function! CheckBackspace() abort
+"   let col = col('.') - 1
+"   return !col || getline('.')[col - 1]  =~# '\s'
+" endfunction
+" 
+" inoremap <silent><expr> <TAB>
+"       \ coc#pum#visible() ? coc#pum#next(1) :
+"       \ CheckBackspace() ? "\<Tab>" :
+"       \ coc#refresh()
+" inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+" 
+" " Make <CR> to accept selected completion item or notify coc.nvim to format
+" " <C-g>u breaks current undo, please make your own choice.
+" inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+"                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-inoremap <silent><expr> <TAB>
-      \ coc#pum#visible() ? coc#pum#next(1) :
-      \ CheckBackspace() ? "\<Tab>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
-
-" Make <CR> to accept selected completion item or notify coc.nvim to format
-" <C-g>u breaks current undo, please make your own choice.
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-let g:coc_snippet_next = '<tab>'
-
-nmap <leader>qf  <Plug>(coc-fix-current)
+" nmap <silent> gd <Plug>(coc-definition)
+" nmap <silent> gy <Plug>(coc-type-definition)
+" nmap <silent> gi <Plug>(coc-implementation)
+" nmap <silent> gr <Plug>(coc-references)
+" let g:coc_snippet_next = '<tab>'
+" 
+" nmap <leader>qf  <Plug>(coc-fix-current)
 
 " COC CONF END 
 " ---------------------------------------------------
 
+
 :command Gitmoji lua require('telescope').extensions.gitmoji.gitmoji()
 
 " nnoremap <leader>xx <cmd>TroubleToggle<cr>
-nmap <silent> <leader>xx <cmd>call coc#rpc#request('fillDiagnostics', [bufnr('%')])<CR><cmd>Trouble loclist<CR>`
+" nmap <silent> <leader>xx <cmd>call coc#rpc#request('fillDiagnostics', [bufnr('%')])<CR><cmd>Trouble loclist<CR>`
 au filetype vimwiki silent! iunmap <buffer> <Tab>
 
 "" Customize color

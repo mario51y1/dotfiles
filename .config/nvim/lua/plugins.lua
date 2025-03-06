@@ -13,7 +13,7 @@ local function on_attach(bufnr)
   end)
 
   -- Default mappings. Feel free to modify or remove as you wish.
-  --
+  
   -- BEGIN_DEFAULT_ON_ATTACH
   vim.keymap.set('n', '<C-]>', api.tree.change_root_to_node,          opts('CD'))
   vim.keymap.set('n', '<C-e>', api.node.open.replace_tree_buffer,     opts('Open: In Place'))
@@ -273,7 +273,7 @@ require('telescope').setup{
                 --   }
                 -- }
                 local emoji = entry.value.value
-                vim.ui.input({ prompt = "Enter commit message: " .. emoji .. " "}, function(msg)
+                vim.ui.input({ prompt = "Enter commit message: " .. emoji .. " " }, function(msg)
                     if not msg then
                         return
                     end
@@ -292,3 +292,158 @@ require('telescope').setup{
 
 require('telescope').load_extension("gitmoji")
 
+require('gitsigns').setup()
+
+-- COPILOT STUFF AND COMPLETION
+require("copilot").setup({
+  suggestion = { enabled = false },
+  panel = { enabled = false },
+})
+require("copilot_cmp").setup()
+
+
+-- Code completion and snippets
+local cmp = require'cmp'
+local luasnip = require("luasnip")
+
+cmp.setup({
+  snippet = {
+    -- REQUIRED - you must specify a snippet engine
+    expand = function(args)
+      require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+    end,
+  },
+  window = {
+    completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered(),
+  },
+  mapping = cmp.mapping.preset.insert({
+    -- ['<C-b>'] = cmp.mapping.scroll_docs(-4),
+    -- ['<C-f>'] = cmp.mapping.scroll_docs(4),
+    -- ['<C-Space>'] = cmp.mapping.complete(),
+    -- ['<C-e>'] = cmp.mapping.abort(),
+    -- ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+        ['<CR>'] = cmp.mapping(function(fallback)
+            if cmp.visible() then
+                if luasnip.expandable() then
+                    luasnip.expand()
+                else
+                    cmp.confirm({
+                        select = true,
+                    })
+                end
+            else
+                fallback()
+            end
+        end),
+
+        ["<Tab>"] = cmp.mapping(function(fallback)
+          if cmp.visible() then
+            cmp.select_next_item()
+          elseif luasnip.locally_jumpable(1) then
+            luasnip.jump(1)
+          else
+            fallback()
+          end
+        end, { "i", "s" }),
+
+        ["<S-Tab>"] = cmp.mapping(function(fallback)
+          if cmp.visible() then
+            cmp.select_prev_item()
+          elseif luasnip.locally_jumpable(-1) then
+            luasnip.jump(-1)
+          else
+            fallback()
+          end
+        end, { "i", "s" }),
+  }),
+  sources = cmp.config.sources({
+    { name = 'copilot'},
+    { name = 'nvim_lsp' },
+    { name = 'luasnip' }, -- For luasnip users.
+    { name = 'render-markdown' },
+    per_filetype = {
+      codecompanion = { "codecompanion" },
+    }
+  }, {
+    { name = 'buffer' },
+  })
+})
+
+-- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
+cmp.setup.cmdline({ '/', '?' }, {
+  mapping = cmp.mapping.preset.cmdline(),
+  sources = {
+    { name = 'buffer' }
+  }
+})
+
+-- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+cmp.setup.cmdline(':', {
+  mapping = cmp.mapping.preset.cmdline(),
+  sources = cmp.config.sources({
+    { name = 'path' }
+  }, {
+    { name = 'cmdline' }
+  }),
+  matching = { disallow_symbol_nonprefix_matching = false }
+})
+
+-- Set up lspconfig.
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+-- LSP SERVERS 
+require('lspconfig')['pyright'].setup {
+  capabilities = capabilities
+}
+require'lspconfig'.marksman.setup{}
+require'lspconfig'.docker_compose_language_service.setup{}
+require'lspconfig'.dockerls.setup{}
+require'lspconfig'.terraformls.setup{}
+
+-- AI Companion
+require("codecompanion").setup({
+  strategies = {
+    chat = {
+      adapter = "copilot",
+      slash_commands = {
+        ["file"] = {
+          -- Location to the slash command in CodeCompanion
+          callback = "strategies.chat.slash_commands.file",
+          description = "Select a file using Telescope",
+          opts = {
+            provider = "telescope", -- Other options include 'default', 'mini_pick', 'fzf_lua', snacks
+            contains_code = true,
+          },
+        },
+      }
+    },
+    inline = {
+      adapter = "copilot",
+    },
+  },
+  display = {
+    action_palette = {
+      width = 95,
+      height = 10,
+      prompt = "Prompt ", -- Prompt used for interactive LLM calls
+      opts = {
+        show_default_actions = true, -- Show the default actions in the action palette?
+        show_default_prompt_library = true, -- Show the default prompt library in the action palette?
+      },
+      provider="telescope"
+    },
+    chat = {
+      window = {
+        border = "single",
+        position="right",
+        width = 0.4
+      }
+    },
+  }
+})
+
+require('render-markdown').setup({
+  enabled=true,
+  file_types = { 'markdown', 'codecompanion' },
+})
