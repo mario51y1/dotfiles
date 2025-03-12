@@ -13,7 +13,7 @@
 #
 # spotify
 #
-# brave
+# brave / arc
 #
 # python??
 #

@@ -1,0 +1,29 @@
+[user]
+	name = Mario Perez
+	email = mario.perez@frontiersin.org
+[credential "https://source.developers.google.com"]
+	helper = gcloud.sh
+[http]
+	cookiefile = /Users/mario.perez/.gitcookies
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[init]
+	defaultBranch = main
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[push]
+	autoSetupRemote = true
+	followTags = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[help]
+	autocorrect = prompt

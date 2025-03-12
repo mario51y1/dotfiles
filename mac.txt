@@ -2,7 +2,9 @@
 
 # Install stuff  with brew
 brew install --cask spotify google-chrome visual-studio-code
-brew install neovim fzf
+brew install neovim fzf eza
+
+install arc
 
 # download dotfiles
 # add git ssh
