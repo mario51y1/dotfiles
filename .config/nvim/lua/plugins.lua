@@ -168,7 +168,7 @@ require("nvim-autopairs").setup {}
 
 
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = {"python","sql","hcl","dockerfile","bash","json","yaml","c","cpp","vim","lua"},
+  ensure_installed = {"python","sql","hcl","dockerfile","bash","json","yaml","c","cpp","vim","lua", "markdown", "markdown_inline", "html", "latex" },
 
   highlight = {
     enable = true,
@@ -329,7 +329,7 @@ cmp.setup({
                     luasnip.expand()
                 else
                     cmp.confirm({
-                        select = true,
+                        select = false,
                     })
                 end
             else
