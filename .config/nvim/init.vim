@@ -55,6 +55,8 @@ Plug 'lewis6991/gitsigns.nvim'                                       " Git signs
 
 Plug 'olacin/telescope-gitmoji.nvim'
 
+Plug 'RRethy/vim-illuminate'                                          " Mark all instances of current word in file
+
 " MD preview, needs node.js
 " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 Plug 'MeanderingProgrammer/render-markdown.nvim'

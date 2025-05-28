@@ -1,6 +1,8 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+vim.keymap.set('n', '<Leader>er', vim.diagnostic.open_float)
+
 local function on_attach(bufnr)
   local api = require('nvim-tree.api')
 
