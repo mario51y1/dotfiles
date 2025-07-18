@@ -196,7 +196,7 @@ set signcolumn=yes
 
 :command Gitmoji lua require('telescope').extensions.gitmoji.gitmoji()
 
-" nnoremap <leader>xx <cmd>TroubleToggle<cr>
+nnoremap <leader>xx <cmd>TroubleToggle<cr>
 " nmap <silent> <leader>xx <cmd>call coc#rpc#request('fillDiagnostics', [bufnr('%')])<CR><cmd>Trouble loclist<CR>`
 au filetype vimwiki silent! iunmap <buffer> <Tab>
 

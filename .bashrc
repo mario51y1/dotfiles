@@ -9,8 +9,11 @@ shopt -s checkwinsize
 
 # Enable history appending instead of overwriting.
 shopt -s histappend
-HISTSIZE=100000
-HISTFILESIZE=100000
+HISTSIZE=1000000
+HISTFILESIZE=1000000
+# dont put diplicate lines in history
+HISTCONTROL=ignoreboth
+
 
 [[ -f ~/.dir_colors ]] && match_lhs="${match_lhs}$(<~/.dir_colors)"
 [[ -f /etc/DIR_COLORS ]] && match_lhs="${match_lhs}$(</etc/DIR_COLORS)"
@@ -62,6 +65,8 @@ man() {
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+
+export PATH="$HOME/.local/bin"
 export EDITOR=nvim
 
 # dont put diplicate lines in histori
@@ -84,19 +89,18 @@ alias layout='xkb-switch'
 alias dotconfig='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ..='cd ..'
 
+#kubectl command completion
+source <(kubectl completion bash)
 
 export PATH=$PATH:/home/mario51y1/.spicetify
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/mario51y1/google-cloud-sdk/path.bash.inc' ]; then . '/home/mario51y1/google-cloud-sdk/path.bash.inc'; fi
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/mario51y1/google-cloud-sdk/completion.bash.inc' ]; then . '/home/mario51y1/google-cloud-sdk/completion.bash.inc'; fi
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# Set up fzf key bindings and fuzzy completion
+source /usr/share/doc/fzf/examples/key-bindings.bash
 
 #alias for ssh correctly in kitten
 alias sshk="kitty +kitten ssh" 
@@ -105,3 +109,13 @@ source ~/Documents/TFM/tfm_ws/devel/setup.bash
 
 eval "$(starship init bash)"
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '$HOME/google-cloud-sdk/path.bash.inc' ]; then . '$HOME/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '$HOME/google-cloud-sdk/completion.bash.inc' ]; then . '$HOME/google-cloud-sdk/completion.bash.inc'; fi

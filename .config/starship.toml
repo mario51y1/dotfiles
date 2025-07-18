@@ -42,9 +42,8 @@ symbol = " "
 
 
 [gcloud]
-format = '[GCP config is $symbol$active]($style) '
+format = 'on GCP:[$project]($style) '
 style = 'bold yellow'
-symbol = ''
 
 [git_branch]
 symbol = " "

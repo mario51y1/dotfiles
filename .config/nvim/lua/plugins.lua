@@ -170,7 +170,7 @@ require("nvim-autopairs").setup {}
 
 
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = {"python","sql","hcl","dockerfile","bash","json","yaml","c","cpp","vim","lua", "markdown", "markdown_inline", "html", "latex" },
+  ensure_installed = {"python","sql","hcl","dockerfile","bash","json","yaml","c","cpp","vim","lua", "markdown", "markdown_inline", "html", "latex", "terraform" },
 
   highlight = {
     enable = true,
