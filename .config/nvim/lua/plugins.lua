@@ -395,13 +395,18 @@ cmp.setup.cmdline(':', {
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- LSP SERVERS 
-require('lspconfig')['pyright'].setup {
-  capabilities = capabilities
-}
-require'lspconfig'.marksman.setup{}
-require'lspconfig'.docker_compose_language_service.setup{}
-require'lspconfig'.dockerls.setup{}
-require'lspconfig'.terraformls.setup{}
+-- require('lspconfig')['pyright'].setup {
+--   capabilities = capabilities
+-- }
+vim.lsp.enable('pyright')
+vim.lsp.enable('marksman')
+vim.lsp.enable('docker_compose_language_service')
+vim.lsp.enable('dockerls')
+vim.lsp.enable('terraformls')
+-- require'lspconfig'.marksman.setup{}
+-- require'lspconfig'.docker_compose_language_service.setup{}
+-- require'lspconfig'.dockerls.setup{}
+-- require'lspconfig'.terraformls.setup{}
 
 -- AI Companion
 require("codecompanion").setup({
