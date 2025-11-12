@@ -401,7 +401,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 vim.lsp.enable('pyright')
 vim.lsp.enable('marksman')
 vim.lsp.enable('docker_compose_language_service')
-vim.lsp.enable('dockerls')
+vim.lsp.enable('docker_language_server')
 vim.lsp.enable('terraformls')
 -- require'lspconfig'.marksman.setup{}
 -- require'lspconfig'.docker_compose_language_service.setup{}
