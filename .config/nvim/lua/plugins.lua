@@ -93,6 +93,9 @@ local function open_nvim_tree(data)
   -- buffer is a [No Name]
   local no_name = data.file == "" and vim.bo[data.buf].buftype == ""
 
+
+  local is_git = vim.bo[data.buf].buftype == "gitcommit"
+
   -- open the tree, find the file but don't focus it
   if directory then
   -- change to the directory
@@ -100,6 +103,10 @@ local function open_nvim_tree(data)
 
     -- open the tree
     require("nvim-tree.api").tree.open()
+    return
+  end
+
+  if is_git then
     return
   end
 
