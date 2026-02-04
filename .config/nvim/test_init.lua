@@ -2,10 +2,7 @@ require('config.lazy')
 -- "plugin stuff
 -- call plug#begin()
 --
--- Plug 'rebelot/kanagawa.nvim'                                        " Color scheme
 -- Plug 'norcalli/nvim-colorizer.lua'                                  " see colors when defining them on files, for example #aabbff
--- Plug 'lukas-reineke/indent-blankline.nvim'                          " Show indent lines
--- Plug 'kyazdani42/nvim-tree.lua'                                     " File iew like vscode
 -- Plug 'nvim-lualine/lualine.nvim'                                    " Status line
 -- Plug 'windwp/nvim-autopairs'                                        " Auto write pairs
 -- Plug 'folke/todo-comments.nvim'                                     " TODO highlighting
@@ -19,7 +16,6 @@ require('config.lazy')
 --
 -- Plug 'nvim-lua/popup.nvim'
 -- Plug 'nvim-lua/plenary.nvim'                                        " Auxiliar LUA functions, for telescope
--- Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }            " File finding 
 --
 --
 -- Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}         " Syntax highlighting using treesitter
@@ -54,7 +50,6 @@ require('config.lazy')
 --
 -- Plug 'lewis6991/gitsigns.nvim'                                       " Git signs
 --
--- Plug 'olacin/telescope-gitmoji.nvim'
 --
 -- Plug 'RRethy/vim-illuminate'                                          " Mark all instances of current word in file
 --
@@ -269,9 +264,14 @@ vim.keymap.set('n', '<leader>xx', '<cmd>Trouble diagnostics<cr>')
 -- "" Customize color
 -- autocmd ColorScheme * hi CocMenuSel ctermbg=237 guibg=#13354A
 
+vim.lsp.enable('pyright')
+vim.lsp.enable('marksman')
+vim.lsp.enable('docker_compose_language_service')
+vim.lsp.enable('docker_language_server')
+vim.lsp.enable('terraformls')
 
 -- colorscheme kanagawa
-vim.cmd.colorscheme("kanagawa")
+-- vim.cmd.colorscheme("kanagawa")
 
 -- " This line has to be after colorscheme or it will be replaced
 vim.cmd[[highlight IndentBlanklineContextChar guifg=#A3D4D6 gui=nocombine]]

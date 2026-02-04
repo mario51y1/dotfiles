@@ -176,7 +176,7 @@ require('kanagawa').setup({
 require("nvim-autopairs").setup {}
 
 
-require'nvim-treesitter.configs'.setup {
+require'nvim-treesitter'.setup {
   ensure_installed = {"python","sql","hcl","dockerfile","bash","json","yaml","c","cpp","vim","lua", "markdown", "markdown_inline", "html", "latex", "terraform" },
 
   highlight = {
@@ -267,39 +267,36 @@ require("todo-comments").setup {
 
 require("trouble").setup()
 
+-- BEGIN TELESCOPE
+local telescopeConfig = require("telescope.config")
+
+-- Clone the default Telescope configuration
+local vimgrep_arguments = { unpack(telescopeConfig.values.vimgrep_arguments) }
+
+-- I want to search in hidden/dot files.
+table.insert(vimgrep_arguments, "--hidden")
+-- I don't want to search in the `.git/venv` directory.
+table.insert(vimgrep_arguments, "--glob")
+table.insert(vimgrep_arguments, "!**/.{git,venv}/*")
 require('telescope').setup{
-  extensions = {
-        gitmoji = {
-            action = function(entry)
-                -- entry = {
-                --   display = "🐛 Fix a bug.",
-                --   index = 4,
-                --   ordinal = "Fix a bug.",
-                --   value = {
-                --     description = "Fix a bug.",
-                --     text = ":bug:",
-                --     value = "🐛"
-                --   }
-                -- }
-                local emoji = entry.value.value
-                vim.ui.input({ prompt = "Enter commit message: " .. emoji .. " " }, function(msg)
-                    if not msg then
-                        return
-                    end
-
-                    local git_tool = ":!git"
-                    if vim.g.loaded_fugitive then
-                        git_tool = ":G"
-                    end
-
-                    vim.cmd(string.format('%s commit -m "%s %s"', git_tool, emoji, msg))
-                end)
-            end,
-        },
-    },
+	defaults = {
+		-- `hidden = true` is not supported in text grep commands.
+		vimgrep_arguments = vimgrep_arguments,
+	},
+	pickers = {
+		find_files = {
+			-- `hidden = true` will still show the inside of `.git/` as it's not `.gitignore`d.
+			find_command = { "rg", "--files", "--hidden", "--glob", "!**/.{git,venv}/*" },
+		},
+	},
+  -- extensions = {
+  --     "fzf"
+  -- },
 }
 
 require('telescope').load_extension("gitmoji")
+require('telescope').load_extension("fzf")
+-- END TELESCOPE
 
 require('gitsigns').setup()
 
