@@ -1,3 +1,4 @@
+"lua require('lazy')
 "plugin stuff
 call plug#begin()
 
@@ -18,7 +19,8 @@ Plug 'preservim/vim-markdown'                                       " Markdown S
 
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'                                        " Auxiliar LUA functions, for telescope
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }            " File finding 
+Plug 'nvim-telescope/telescope.nvim', { 'branch': 'master' }            " File finding 
+Plug 'nvim-telescope/telescope-fzf-native.nvim'
 
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}         " Syntax highlighting using treesitter
@@ -65,7 +67,7 @@ Plug 'MeanderingProgrammer/render-markdown.nvim'
 call plug#end()
 
 
-" Avoid SSL CERT error
+" Avoid SSL CERT errorautocomplete
 let g:copilot_proxy_strict_ssl = v:false
 
 " By default, disable line wrapping for Markdown Preview
