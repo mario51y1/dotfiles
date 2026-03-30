@@ -1,0 +1,39 @@
+f19c88fa-a7c2-4083-aefb-4f077c1e349c:
+  type: branch
+  id: b4f48e2b-f7ce-4d1c-bc3c-89da45580036
+  direction: horizontal
+  sizes:
+    - 50
+    - 50
+  nodes:
+    - type: leaf
+      id: 15c26793-8b94-40d3-867b-f241f3cb2709
+      openFiles:
+        - path: /home/mario51y1/Documents/Zettlr Tutorial/welcome.md
+          pinned: false
+      activeFile:
+        path: /home/mario51y1/Documents/Zettlr Tutorial/welcome.md
+        pinned: false
+    - type: branch
+      id: 08542cf9-5266-456e-91ef-2290213df09d
+      direction: vertical
+      sizes:
+        - 50
+        - 50
+      nodes:
+        - type: leaf
+          id: f811876e-a27e-4206-bfc7-30e431f8b30e
+          openFiles:
+            - path: /home/mario51y1/Documents/Zettlr Tutorial/split-view-intro.md
+              pinned: false
+          activeFile:
+            path: /home/mario51y1/Documents/Zettlr Tutorial/split-view-intro.md
+            pinned: false
+        - type: leaf
+          id: d51592ee-0e1b-41f1-ba7d-5acf5bec1cff
+          openFiles:
+            - path: /home/mario51y1/Documents/Zettlr Tutorial/helpful-links.md
+              pinned: false
+          activeFile:
+            path: /home/mario51y1/Documents/Zettlr Tutorial/helpful-links.md
+            pinned: false

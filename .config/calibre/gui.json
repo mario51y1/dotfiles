@@ -1,0 +1,993 @@
+{
+  "action-layout-toolbar": [
+    "Add Books",
+    "Edit Metadata",
+    null,
+    "Convert Books",
+    "View",
+    null,
+    "Store",
+    "Donate",
+    "Fetch News",
+    "Help",
+    null,
+    "Preferences",
+    "Remove Books",
+    "Choose Library",
+    "Save To Disk",
+    "Connect Share",
+    "Tweak ePub",
+    "KOReader Sync"
+  ],
+  "action-layout-toolbar-device": [
+    "Add Books",
+    "Edit Metadata",
+    null,
+    "Convert Books",
+    "View",
+    "Send To Device",
+    null,
+    null,
+    "Location Manager",
+    null,
+    null,
+    "Fetch News",
+    "Save To Disk",
+    "Store",
+    "Connect Share",
+    null,
+    "Remove Books",
+    null,
+    "Help",
+    "Preferences",
+    "KOReader Sync"
+  ],
+  "basic_metadata_widget_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAADAAAA7QAAAWMAAAEKAf////8BAAAAAQA="
+  },
+  "book_list_pin_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAABAAAAAEYA/////wEAAAABAA=="
+  },
+  "card_a_view books view state": {
+    "column_alignment": {
+      "size": "center",
+      "timestamp": "center"
+    },
+    "column_positions": {
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
+      "title": 1
+    },
+    "column_sizes": {
+      "authors": 86,
+      "collections": 96,
+      "inlibrary": 89,
+      "size": 53,
+      "timestamp": 70,
+      "title": 56
+    },
+    "formats_injected": true,
+    "hidden_columns": [],
+    "id_injected": true,
+    "languages_injected": true,
+    "last_modified_injected": true,
+    "path_injected": true,
+    "sort_history": [
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ]
+    ]
+  },
+  "card_b_view books view state": {
+    "column_alignment": {
+      "size": "center",
+      "timestamp": "center"
+    },
+    "column_positions": {
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
+      "title": 1
+    },
+    "column_sizes": {
+      "authors": 86,
+      "collections": 96,
+      "inlibrary": 89,
+      "size": 53,
+      "timestamp": 70,
+      "title": 56
+    },
+    "formats_injected": true,
+    "hidden_columns": [],
+    "id_injected": true,
+    "languages_injected": true,
+    "last_modified_injected": true,
+    "path_injected": true,
+    "sort_history": [
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ]
+    ]
+  },
+  "choose-merge-dialog-splitter-state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAABhgAAAQAA/////wEAAAABAA=="
+  },
+  "cover_grid_background": {
+    "dark": [
+      45,
+      45,
+      45
+    ],
+    "dark_texture": null,
+    "light": [
+      80,
+      80,
+      80
+    ],
+    "light_texture": null,
+    "migrated": true
+  },
+  "custom_colors_for_color_dialog": [
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ]
+  ],
+  "do_not_show_device_open_popup_message_KINDLE2": true,
+  "geometry-of-Plugin Updater plugin:plugin updater dialog": {
+    "frame_geometry": {
+      "height": 527,
+      "width": 1011,
+      "x": 114,
+      "y": 384
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 527,
+      "width": 1011,
+      "x": 114,
+      "y": 384
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 527,
+      "width": 1011,
+      "x": 114,
+      "y": 384
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAByAAABgAAABGQAAAOOAAAAcgAAAYAAAARkAAADjgAAAAACAAAACgAAAAByAAABgAAABGQAAAOO"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Dell Inc.",
+      "model": "DELL S2721DGF",
+      "name": "DP-2",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4480,
+        "x": -1920,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-calibre_main_window_geometry": {
+    "frame_geometry": {
+      "height": 1054,
+      "width": 1894,
+      "x": -1920,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1054,
+      "width": 1894,
+      "x": -1920,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": -1,
+      "width": -1,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAD///iAAAAAAP///+UAAAQdAAAAAAAAAAD////+/////gAAAAECAAAAB4D///iAAAAAAP///+UAAAQd"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": -1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "Microstep",
+      "model": "MSI MAG241C",
+      "name": "DP-3",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4480,
+        "x": -1920,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-choose-merge-dialog-geometry": {
+    "frame_geometry": {
+      "height": 339,
+      "width": 668,
+      "x": -1920,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 339,
+      "width": 668,
+      "x": -1920,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 339,
+      "width": 668,
+      "x": -1920,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAD///iAAAAAAP//+xsAAAFS///4gAAAAAD///sbAAABUgAAAAECAAAAB4D///iAAAAAAP//+xsAAAFS"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": -1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "Microstep",
+      "model": "MSI MAG241C",
+      "name": "DP-3",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4480,
+        "x": -1920,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-config_widget_dialog_geometry_Sharing_Metadata download": {
+    "frame_geometry": {
+      "height": 673,
+      "width": 965,
+      "x": -1920,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 673,
+      "width": 965,
+      "x": -1920,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 533,
+      "width": 508,
+      "x": -1920,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAD///iAAAAAAP///EQAAAKg///4gAAAAAD///p7AAACFAAAAAECAAAAB4D///iAAAAAAP///EQAAAKg"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": -1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "Microstep",
+      "model": "MSI MAG241C",
+      "name": "DP-3",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4480,
+        "x": -1920,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-diff_dialog_geom": {
+    "frame_geometry": {
+      "height": 524,
+      "width": 666,
+      "x": -1920,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 524,
+      "width": 666,
+      "x": -1920,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 524,
+      "width": 666,
+      "x": -1920,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAD///iAAAAAAP//+xkAAAIL///4gAAAAAD///sZAAACCwAAAAECAAAAB4D///iAAAAAAP//+xkAAAIL"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": -1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "Microstep",
+      "model": "MSI MAG241C",
+      "name": "DP-3",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4480,
+        "x": -1920,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-duplicates-question-dialog-geometry": {
+    "frame_geometry": {
+      "height": 380,
+      "width": 541,
+      "x": -1920,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 380,
+      "width": 541,
+      "x": -1920,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 380,
+      "width": 541,
+      "x": -1920,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAD///iAAAAAAP//+pwAAAF7///4gAAAAAD///qcAAABewAAAAECAAAAB4D///iAAAAAAP//+pwAAAF7"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": -1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "Microstep",
+      "model": "MSI MAG241C",
+      "name": "DP-3",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4480,
+        "x": -1920,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-jobs_dialog_geometry": {
+    "frame_geometry": {
+      "height": 342,
+      "width": 355,
+      "x": -1920,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 342,
+      "width": 355,
+      "x": -1920,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 342,
+      "width": 355,
+      "x": -1920,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAD///iAAAAAAP//+eIAAAFV///4gAAAAAD///niAAABVQAAAAECAAAAB4D///iAAAAAAP//+eIAAAFV"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": -1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "Microstep",
+      "model": "MSI MAG241C",
+      "name": "DP-3",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4480,
+        "x": -1920,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-metadata_single_gui_geom": {
+    "frame_geometry": {
+      "height": 600,
+      "width": 850,
+      "x": -1920,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 600,
+      "width": 850,
+      "x": -1920,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 600,
+      "width": 850,
+      "x": -1920,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAD///iAAAAAAP//+9EAAAJX///4gAAAAAD///vRAAACVwAAAAECAAAAB4D///iAAAAAAP//+9EAAAJX"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": -1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "Microstep",
+      "model": "MSI MAG241C",
+      "name": "DP-3",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4480,
+        "x": -1920,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-metasingle_window_geometry3": {
+    "frame_geometry": {
+      "height": 1030,
+      "width": 1850,
+      "x": -1920,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1030,
+      "width": 1850,
+      "x": -1920,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 1030,
+      "width": 1850,
+      "x": -1920,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAD///iAAAAAAP///7kAAAQF///4gAAAAAD///+5AAAEBQAAAAECAAAAB4D///iAAAAAAP///7kAAAQF"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": -1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "Microstep",
+      "model": "MSI MAG241C",
+      "name": "DP-3",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4480,
+        "x": -1920,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-plugin config dialog:Device interface:CrossPoint Reader": {
+    "frame_geometry": {
+      "height": 478,
+      "width": 394,
+      "x": 1073,
+      "y": 441
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 478,
+      "width": 394,
+      "x": 1073,
+      "y": 441
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 478,
+      "width": 394,
+      "x": 1073,
+      "y": 441
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAQxAAABuQAABboAAAOWAAAEMQAAAbkAAAW6AAADlgAAAAACAAAACgAAAAQxAAABuQAABboAAAOW"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Dell Inc.",
+      "model": "DELL S2721DGF",
+      "name": "DP-2",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4480,
+        "x": -1920,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-preferences dialog geometry": {
+    "frame_geometry": {
+      "height": 720,
+      "width": 930,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 720,
+      "width": 930,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 720,
+      "width": 930,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAA6EAAALPAAAAAAAAAAAAAAOhAAACzwAAAAACAAAACgAAAAAAAAAAAAAAA6EAAALP"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Dell Inc.",
+      "model": "DELL S2721DGF",
+      "name": "DP-2",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4480,
+        "x": -1920,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-view-log-dialog": {
+    "frame_geometry": {
+      "height": 500,
+      "width": 700,
+      "x": -1920,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 500,
+      "width": 700,
+      "x": -1920,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 500,
+      "width": 700,
+      "x": -1920,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAD///iAAAAAAP//+zsAAAHz///4gAAAAAD///s7AAAB8wAAAAECAAAAB4D///iAAAAAAP//+zsAAAHz"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": -1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "Microstep",
+      "model": "MSI MAG241C",
+      "name": "DP-3",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4480,
+        "x": -1920,
+        "y": 0
+      }
+    }
+  },
+  "grid view visible": false,
+  "jobs view column layout3": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfQAAAAFAQEBAAAAAAAAAAAAAAAAAGT/////AAAAhAAAAAAAAAAAAAAD6AAAAAAAAAAAAAAAAAAAAAAFAAAAAA=="
+  },
+  "library_usage_stats": {
+    "/home/mario51y1/Calibre Library": 6,
+    "/home/mario51y1/Cloud/GDrive/Biblioteca de calibre": 19
+  },
+  "main_window_central_widget_state": {
+    "layout": "wide",
+    "narrow_desires": {
+      "book_details_height": 0.23059866962305986,
+      "cover_browser_width": 0.3494704992435703,
+      "quick_view_height": 0.25609756097560976,
+      "tag_browser_width": 0.24962178517397882
+    },
+    "narrow_visibility": {
+      "book_details": true,
+      "book_list": true,
+      "cover_browser": false,
+      "quick_view": false,
+      "tag_browser": true
+    },
+    "wide_desires": {
+      "book_details_width": 0.29954614220877457,
+      "cover_browser_height": 0.28600823045267487,
+      "quick_view_height": 0.23765432098765432,
+      "tag_browser_width": 0.10572916666666667
+    },
+    "wide_visibility": {
+      "book_details": true,
+      "book_list": true,
+      "cover_browser": false,
+      "quick_view": false,
+      "tag_browser": true
+    }
+  },
+  "memory_view books view state": {
+    "column_alignment": {
+      "size": "center",
+      "timestamp": "center"
+    },
+    "column_positions": {
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
+      "title": 1
+    },
+    "column_sizes": {
+      "authors": 231,
+      "collections": 96,
+      "inlibrary": 89,
+      "size": 67,
+      "timestamp": 96,
+      "title": 239
+    },
+    "formats_injected": true,
+    "hidden_columns": [],
+    "id_injected": true,
+    "languages_injected": true,
+    "last_modified_injected": true,
+    "path_injected": true,
+    "sort_history": [
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ]
+    ]
+  },
+  "previous_sort_order_BooksView": {
+    "timestamp": false,
+    "title": false
+  },
+  "quick_start_guide_added": true,
+  "qv_open_at_shutdown": false,
+  "recently_used_languages": [
+    "English"
+  ],
+  "replace_scene_breaks_history": [
+    "",
+    "<hr />",
+    "∗ ∗ ∗",
+    "• • •",
+    "♦ ♦ ♦",
+    "† †",
+    "‡ ‡ ‡",
+    "∞ ∞ ∞",
+    "¤ ¤ ¤"
+  ],
+  "search bar visible": true,
+  "tag browser search box visible": false
+}

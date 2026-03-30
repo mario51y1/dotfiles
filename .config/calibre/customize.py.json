@@ -1,0 +1,22 @@
+{
+  "disabled_plugins": {
+    "__class__": "set",
+    "__value__": [
+      "CrossPoint Reader"
+    ]
+  },
+  "enabled_plugins": {
+    "__class__": "set",
+    "__value__": [
+      "Google Images",
+      "Big Book Search",
+      "Edelweiss"
+    ]
+  },
+  "filetype_mapping": {},
+  "plugin_customization": {},
+  "plugins": {
+    "CrossPoint Reader": "/home/mario51y1/.config/calibre/plugins/CrossPoint Reader.zip",
+    "KOReader Sync": "/home/mario51y1/.config/calibre/plugins/KOReader Sync.zip"
+  }
+}

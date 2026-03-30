@@ -109,18 +109,68 @@
     "where": "current",
     "wrap": true
   },
-  "import-foreign-geometry": {
-    "__class__": "bytearray",
-    "__value__": "AdnQywADAAAAAAt6AAACQwAADYsAAAMNAAALewAAAkQAAA2KAAADDAAAAAEAAAAACgAAAAt7AAACRAAADYoAAAMM"
-  },
-  "main_window_geometry": {
-    "__class__": "bytearray",
-    "__value__": "AdnQywADAAAAAAyOAAAAJwAAEYUAAAWYAAAMkQAAACoAABGCAAAFlQAAAAEAAAAACgAAAAyRAAAAKgAAEYIAAAWV"
+  "geometry-of-main_window_geometry": {
+    "frame_geometry": {
+      "height": 1054,
+      "width": 1894,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1054,
+      "width": 1894,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 1054,
+      "width": 939,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAB2UAAAQdAAAAAAAAAAAAAAOqAAAEHQAAAAACAAAACgAAAAAAAAAAAAAAB2UAAAQd"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Dell Inc.",
+      "model": "DELL S2721DGF",
+      "name": "DP-2",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4480,
+        "x": -1920,
+        "y": 0
+      }
+    }
   },
   "main_window_state": {
     "__class__": "bytearray",
-    "__value__": "AAAA/wAAAAD9AAAABAAAAAAAAAEAAAAFFPwCAAAABfsAAAAkAGYAaQBsAGUAcwAtAGIAcgBvAHcAcwBlAHIALQBkAG8AYwBrAQAAAD4AAAUUAAAAWgD////7AAAAHgB0AG8AYwAtAHYAaQBlAHcAZQByAC0AZABvAGMAawAAAAAA/////wAAAFoA////+wAAACAAdABlAHgAdAAtAHMAZQBhAHIAYwBoAC0AZABvAGMAawAAAAAA/////wAAAIAA////+wAAACAAYwBoAGUAYwBrAHAAbwBpAG4AdABzAC0AZABvAGMAawAAAAAA/////wAAAIwA////+wAAACYAcwBhAHYAZQBkAC0AcwBlAGEAcgBjAGgAZQBzAC0AZABvAGMAawAAAAAA/////wAAAhcA////AAAAAQAAAoAAAAUU/AIAAAAC+wAAABgAcAByAGUAdgBpAGUAdwAtAGQAbwBjAGsBAAAAPgAABRQAAABTAP////sAAAAaAGwAaQB2AGUALQBjAHMAcwAtAGQAbwBjAGsAAAAAAP////8AAABaAP///wAAAAIAAAAAAAAAAPwBAAAAAfsAAAAeAGMAaABlAGMAawAtAGIAbwBvAGsALQBkAG8AYwBrAAAAAAD/////AAAAkAD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAHABpAG4AcwBwAGUAYwB0AG8AcgAtAGQAbwBjAGsAAAAAAP////8AAAA7AP///wAAAWYAAAUUAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAUAGcAbABvAGIAYQBsAC0AYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABIAdABvAG8AbABzAC0AYgBhAHIBAAABJv////8AAAAAAAAAAAAAABYAcABsAHUAZwBpAG4AcwAtAGIAYQByAAAAAAD/////AAAAAAAAAAA="
+    "__value__": "AAAA/wAAAAD9AAAABAAAAAAAAAErAAADyfwCAAAABfsAAAAkAGYAaQBsAGUAcwAtAGIAcgBvAHcAcwBlAHIALQBkAG8AYwBrAQAAAD4AAAPJAAAAWgD////7AAAAHgB0AG8AYwAtAHYAaQBlAHcAZQByAC0AZABvAGMAawAAAAAA/////wAAAFoA////+wAAACAAdABlAHgAdAAtAHMAZQBhAHIAYwBoAC0AZABvAGMAawAAAAAA/////wAAAH0A////+wAAACAAYwBoAGUAYwBrAHAAbwBpAG4AdABzAC0AZABvAGMAawAAAAAA/////wAAAIwA////+wAAACYAcwBhAHYAZQBkAC0AcwBlAGEAcgBjAGgAZQBzAC0AZABvAGMAawAAAAAA/////wAAAhUA////AAAAAQAAAfUAAAPJ/AIAAAAC+wAAABgAcAByAGUAdgBpAGUAdwAtAGQAbwBjAGsBAAAAPgAAA8kAAABTAP////sAAAAaAGwAaQB2AGUALQBjAHMAcwAtAGQAbwBjAGsAAAAAAP////8AAABaAP///wAAAAIAAAAAAAAAAPwBAAAAAfsAAAAeAGMAaABlAGMAawAtAGIAbwBvAGsALQBkAG8AYwBrAAAAAAD/////AAAAkAD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAHABpAG4AcwBwAGUAYwB0AG8AcgAtAGQAbwBjAGsAAAAAAP////8AAAA1AP///wAABDoAAAPJAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAUAGcAbABvAGIAYQBsAC0AYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABIAdABvAG8AbABzAC0AYgBhAHIBAAABJv////8AAAAAAAAAAAAAABYAcABsAHUAZwBpAG4AcwAtAGIAYQByAAAAAAD/////AAAAAAAAAAA="
   },
+  "recent-books": [
+    "/home/mario51y1/Documents/LibrosPaPoner/Primer libro de Lankhmar - Fritz Leiber.epub",
+    "/home/mario51y1/Downloads/The Science of Rapid Skill Acquisition (Peter Hollins) (z-library.sk, 1lib.sk, z-lib.sk).epub",
+    "/home/mario51y1/Downloads/The Science of Rapid Skill Acquisition Advanced Methods to Learn, Remember, and Master New Skills and Information [Second… (Peter Hollins) (z-library.sk, 1lib.sk, z-lib.sk)(1).epub",
+    "/home/mario51y1/Downloads/Project Hail Mary (Andy Weir) (z-library.sk, 1lib.sk, z-lib.sk).epub",
+    "/home/mario51y1/Downloads/cu31924014451409.epub"
+  ],
   "reports-ui-state": {},
   "saved_seaches_state": {
     "direction": "down",

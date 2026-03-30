@@ -1,0 +1,40 @@
+{
+  "add a plugin dialog": "/home/mario51y1/Downloads/Untitled Folder",
+  "add books dialog dir": "/home/mario51y1/LIBROS_PA_PONER",
+  "add books dialog dir-last-used-filter-spec-all-files": false,
+  "catalogs_to_be_synced": {
+    "__class__": "set",
+    "__value__": []
+  },
+  "choose library location": "/home/mario51y1/Cloud/GDrive/Biblioteca de calibre",
+  "notified-version-updates": {
+    "__class__": "set",
+    "__value__": [
+      "9.5",
+      "9.4",
+      "9.3",
+      "9.2",
+      "9.1"
+    ]
+  },
+  "sort_history": [
+    [
+      "timestamp",
+      false
+    ],
+    [
+      "title",
+      false
+    ],
+    [
+      "ondevice",
+      true
+    ],
+    [
+      "timestamp",
+      false
+    ]
+  ],
+  "welcome_wizard_device": "kindle",
+  "welcome_wizard_was_run": true
+}

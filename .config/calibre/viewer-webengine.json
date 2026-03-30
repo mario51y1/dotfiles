@@ -1,0 +1,112 @@
+{
+  "geometry-of-main_window_geometry": {
+    "frame_geometry": {
+      "height": 519,
+      "width": 939,
+      "x": -1920,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 519,
+      "width": 939,
+      "x": -1920,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 519,
+      "width": 939,
+      "x": -1920,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAD///iAAAAAAP///CoAAAIG///4gAAAAAD///wqAAACBgAAAAECAAAAB4D///iAAAAAAP///CoAAAIG"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": -1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "Microstep",
+      "model": "MSI MAG241C",
+      "name": "DP-3",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4480,
+        "x": -1920,
+        "y": 0
+      }
+    }
+  },
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAEAAAACB/wCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawEAAAAAAAACBwAAAIoA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAmgD///8AAAABAAAAAAAAAAD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACDAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAPIA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAFAD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAANcA////AAACpQAAAgcAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "session_data": {
+    "controls_help_shown_count": 2,
+    "standalone_font_settings": {},
+    "standalone_misc_settings": {
+      "remember_last_read": true,
+      "remember_window_geometry": false,
+      "save_annotations_in_ebook": true,
+      "singleinstance": false
+    },
+    "standalone_recently_opened": [
+      {
+        "authors": [
+          "George MacDonald"
+        ],
+        "key": "/home/mario51y1/Cloud/GDrive/Biblioteca de calibre/George MacDonald/Phantastes_ A Faerie Romance for Men and Women (766)/Phantastes_ A Faerie Romance for Men and W - George MacDonald.epub",
+        "pathtoebook": "/home/mario51y1/Cloud/GDrive/Biblioteca de calibre/George MacDonald/Phantastes_ A Faerie Romance for Men and Women (766)/Phantastes_ A Faerie Romance for Men and W - George MacDonald.epub",
+        "timestamp": "2026-03-19T23:30:02.061Z",
+        "title": "Phantastes: A Faerie Romance for Men and Women"
+      },
+      {
+        "authors": [
+          "Fritz Leiber"
+        ],
+        "key": "/home/mario51y1/Cloud/GDrive/Biblioteca de calibre/Fritz Leiber/Primer libro de Lankhmar (748)/Primer libro de Lankhmar - Fritz Leiber.epub",
+        "pathtoebook": "/home/mario51y1/Cloud/GDrive/Biblioteca de calibre/Fritz Leiber/Primer libro de Lankhmar (748)/Primer libro de Lankhmar - Fritz Leiber.epub",
+        "timestamp": "2026-03-19T22:35:32.649Z",
+        "title": "Primer libro de Lankhmar"
+      },
+      {
+        "authors": [
+          "Peter Hollins"
+        ],
+        "key": "/home/mario51y1/Cloud/GDrive/Biblioteca de calibre/Peter Hollins/The Science of Rapid Skill Acquisition (746)/The Science of Rapid Skill Acquisition - Peter Hollins.epub",
+        "pathtoebook": "/home/mario51y1/Cloud/GDrive/Biblioteca de calibre/Peter Hollins/The Science of Rapid Skill Acquisition (746)/The Science of Rapid Skill Acquisition - Peter Hollins.epub",
+        "timestamp": "2026-03-05T23:22:18.651Z",
+        "title": "The Science of Rapid Skill Acquisition"
+      },
+      {
+        "key": "/home/mario51y1/Cloud/GDrive/Biblioteca de calibre/Unknown/cu31924014451409 (739)/cu31924014451409 - Unknown.epub",
+        "pathtoebook": "/home/mario51y1/Cloud/GDrive/Biblioteca de calibre/Unknown/cu31924014451409 (739)/cu31924014451409 - Unknown.epub",
+        "timestamp": "2026-02-26T22:09:58.269Z",
+        "title": "cu31924014451409"
+      },
+      {
+        "authors": [
+          "Dr. Robert A. Glover"
+        ],
+        "key": "/home/mario51y1/Cloud/GDrive/Biblioteca de calibre/Robert A. Glover/No More Mr. Nice Guy (737)/No More Mr. Nice Guy - Robert A. Glover.epub",
+        "pathtoebook": "/home/mario51y1/Cloud/GDrive/Biblioteca de calibre/Robert A. Glover/No More Mr. Nice Guy (737)/No More Mr. Nice Guy - Robert A. Glover.epub",
+        "timestamp": "2026-02-08T11:42:57.621Z",
+        "title": "No More Mr. Nice Guy"
+      }
+    ]
+  }
+}
