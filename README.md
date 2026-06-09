@@ -4,6 +4,8 @@ stuff to install
 - bat fzf eza nvim docker starship bottom nodejs kitty direnv 
 - rofi, wayland, waybar, ly, swaybag, waypaper, dunst
 - nemo, yazi
+    - for contextual extract button, install file_roller (gnome-extra), nemo_fileroller
+- unzip
 - move config files for
     - nvim
     - starship
