@@ -1,0 +1,3 @@
+binds {
+    Mod+D hotkey-overlay-title="Run an Application: rofi" { spawn "rofi"; }
+}
